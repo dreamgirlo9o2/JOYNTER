@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Login</title>
+    <link href="../static/css/std-login.css" rel="stylesheet" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="../static/fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="cover">
+        <h1 class="sign-up">Hello Friend!</h1>
+        <p class="sign-up">
+          Enter your Personal details<br />and start a journey with us
+        </p>
+        <a class="button sign-up" href="#cover">SIGN IN</a>
+        <h1 class="sign-in">Welcome Back!</h1>
+        <p class="sign-in">
+          To keep connected with us please<br />login with your personal info
+        </p>
+        <br />
+        <a class="button sub sign-in" href="../template/std-login.html"
+          >LOGIN</a
+        >
+      </div>
+      <div class="login">
+        <h1>LOGIN</h1>
+
+        <p>or use your email account:</p>
+        <form method="POST">
+          <input type="email" placeholder="Email" class="input-field" /><br />
+          <input
+            type="password"
+            placeholder="Password"
+            class="input-field"
+          /><br />
+          <a id="forgot-pass" href="../template/forgot-password.html"
+            >Forgot your password</a
+          ><br />
+          <input type="submit" type="submit" value="LOGIN" class="submit-btn" />
+          <!--social-icon-->
+          <div class="social-login">
+            <span class="social-label">Or login with</span>
+            <ul class="socials">
+              <li>
+                <a href="#"
+                  ><i class="display-flex-center zmdi zmdi-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="display-flex-center zmdi zmdi-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="display-flex-center zmdi zmdi-google"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!--end of social-icon-->
+        </form>
+      </div>
+      <div class="register">
+        <h1>Create Account</h1>
+
+        <p>or use your email for registration:</p>
+        <form method="POST">
+          <input type="text" placeholder="Name" class="input-field" /><br />
+          <input type="email" placeholder="Email" class="input-field" /><br />
+
+          <input type="password" placeholder="password" class="input-field" />
+          <input
+            type="password"
+            placeholder="Conform password"
+            class="input-field"
+          />
+          <br />
+          <input class="submit-btn" type="submit" value="Sign up" />
+        </form>
+      </div>
+    </div>
+    <style>
+      body {
+        background: #f0f2f0; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #000c40,
+          #f0f2f0
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #000c40,
+          #f0f2f0
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+    </style>
+  </body>
+</html>

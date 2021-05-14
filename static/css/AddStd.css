@@ -1,0 +1,20 @@
+.container-name .div1 {
+  display: inline-block;
+  width: 49%;
+  background-color: darkslategray;
+  height: 460px;
+  border: 1px solid black;
+  border-color: white;
+}
+.container p {
+  display: inline-block;
+  width: 49%;
+  height: auto;
+}
+form {
+  padding-left: 50px;
+}
+button {
+  float: right;
+  margin-left: 5px;
+}

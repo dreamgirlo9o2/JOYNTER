@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Std Registration Form</title>
+    <link href="../static/css/AddStd.css" rel="stylesheet" />
+    <script>
+      function openForm() {
+        document.getElementById('myForm').style.display = 'block'
+      }
+
+      function closeForm() {
+        document.getElementById('myForm').style.display = 'none'
+      }
+    </script>
+  </head>
+  <body style="background-color: darkslategrey">
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <div class="container">
+          <p class="para" style="color: white">Personal Details</p>
+          <p class="para" style="color: white">Education Details</p>
+        </div>
+
+        <div class="container-name">
+          <div class="div1">
+            <form class="registration">
+              <table align="fa-life-ring" cellpadding="8" style="color: white">
+                <!----- First Name ---------------------------------------------------------->
+                <tr>
+                  <td>FIRST NAME</td>
+                  <td>
+                    <input type="text" name="First_Name" maxlength="30" />
+                  </td>
+                </tr>
+
+                <!----- Last Name ---------------------------------------------------------->
+                <tr>
+                  <td>LAST NAME</td>
+                  <td><input type="text" name="Last_Name" maxlength="30" /></td>
+                </tr>
+                <!----- Middle Name ---------------------------------------------------------->
+                <tr>
+                  <td>MIDDLE NAME</td>
+                  <td>
+                    <input type="text" name="Middle_Name" maxlength="30" />
+                  </td>
+                </tr>
+                <!----- Last Name ---------------------------------------------------------->
+                <tr>
+                  <td>EXTENTION NAME</td>
+                  <td>
+                    <input type="text" name="Extra_Name" maxlength="30" />
+                  </td>
+                </tr>
+
+                <!----- Date Of Birth -------------------------------------------------------->
+                <tr>
+                  <td>DATE OF BIRTH</td>
+                  <td>
+                    <input
+                      type="date"
+                      id="dateOfBirth"
+                      class="field date-field dob-field"
+                      min="1900-01-01"
+                      max="2015-09-18"
+                      style="padding: 5px; width: 64%"
+                      required
+                    />
+                  </td>
+                </tr>
+
+                <!----- Gender ----------------------------------------------------------->
+                <tr>
+                  <td>GENDER</td>
+                  <td>
+                    <select
+                      type="text"
+                      name="gender"
+                      style="padding: 5px; width: 70%"
+                    >
+                      <option>Select here</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Other</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!----- Address ---------------------------------------------------------->
+                <tr>
+                  <td>ADDRESS <br /><br /><br /></td>
+                  <td>
+                    <textarea name="Address" rows="4" cols="30"></textarea>
+                  </td>
+                </tr>
+
+                <!----- fatername ---------------------------------------------------------->
+                <tr>
+                  <td>FATER'S NAME</td>
+                  <td><input type="text" name="Fathername" /></td>
+                </tr>
+
+                <!----- mothername ---------------------------------------------------------->
+                <tr>
+                  <td>MOTHER'S NAME</td>
+                  <td><input type="text" name="Mothername" /></td>
+                </tr>
+
+                <!----- contact ---------------------------------------------------------->
+                <tr>
+                  <td>CONTACT NO</td>
+                  <td><input type="number" name="contact" maxlength="15" /></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          <div class="div1">
+            <form class="registration">
+              <table align="fa-life-ring" cellpadding="8" style="color: white">
+                <!----- pre schl ---------------------------------------------------------->
+                <tr>
+                  <td>PREVIOUS SCHOOL</td>
+                  <td>
+                    <input type="text" name="Pre-school" style="width: 90%" />
+                  </td>
+                </tr>
+
+                <!----- schl add ---------------------------------------------------------->
+                <tr>
+                  <td>SCHOOL ADDRESS</td>
+                  <td>
+                    <input type="text" name="Schl-add" style="width: 90%" />
+                  </td>
+                </tr>
+
+                <!----- schl doc---------------------------------------------------------->
+                <tr>
+                  <td>SCHOOL DOCUMENT</td>
+                  <td>
+                    <input type="text" name="Schl-doc" style="width: 90%" />
+                  </td>
+                </tr>
+                <!----- ATTENDED---------------------------------------------------------->
+                <tr>
+                  <td>LAST DATE ATTENDED</td>
+                  <td>
+                    <input type="text" name="Schl-doc" style="width: 90%" />
+                  </td>
+                </tr>
+                <td class="center">
+                  ..........{ Current Information }..........
+                </td>
+                <!----- account ----------------------------------------------------------->
+                <tr>
+                  <td>ACCOUNT STATUS</td>
+                  <td>
+                    <select
+                      type="text"
+                      name="account"
+                      style="padding: 5px; width: 70%"
+                    >
+                      <option>Select here</option>
+                      <option>Low</option>
+                      <option>Medium</option>
+                      <option>High</option>
+                    </select>
+                  </td>
+                </tr>
+                <!----- course ----------------------------------------------------------->
+                <tr>
+                  <td>COURSE</td>
+                  <td>
+                    <select
+                      type="text"
+                      name="course"
+                      style="padding: 5px; width: 70%"
+                    >
+                      <option>Select here</option>
+                      <option>Biology</option>
+                      <option>Chemistry</option>
+                      <option>Zoology</option>
+                    </select>
+                  </td>
+                </tr>
+                <!----- year ----------------------------------------------------------->
+                <tr>
+                  <td>YEAR LEVEL</td>
+                  <td>
+                    <select
+                      type="text"
+                      name="year"
+                      style="padding: 5px; width: 70%"
+                    >
+                      <option>Select here</option>
+                      <option>1st</option>
+                      <option>2nd</option>
+                      <option>3rd</option>
+                      <option>4th</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          <a href="../template/view-std-details.html">
+            <button
+              class="btn btn-warning btn-md float-right ml-3 btn cancel"
+              type="button"
+              name="close"
+              onclick="closeForm()"
+            >
+              Close
+            </button></a
+          >
+          <button
+            class="btn btn-danger btn-md float-right"
+            type="submit"
+            name="edit"
+          >
+            Edit
+          </button>
+          <button
+            class="btn btn-danger btn-md float-right"
+            type="submit"
+            name="save"
+          >
+            Save
+          </button>
+          </a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

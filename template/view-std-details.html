@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>View Student Details</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <style>
+.container{
+  padding-top:20px;
+  }
+ .column{
+ width:50%;
+ }
+ ul{
+ float:left;
+ width:20%;
+ }
+.box1{
+ padding-bottom:30px;
+}
+.box2{
+ padding-bottom:30px;
+ padding-left:50px;
+}
+select{
+margin-left:20px;
+padding-left:20px;
+padding-right:20px;
+}
+  </style>
+    
+</head>
+<body> 
+ 
+<div class="container">
+
+    <div class="row">
+      <p class="column"><b>Go to student creation</b></p>
+      <div class="column text-right">
+        <a href="../template/University-dashboard.html">
+          <button class="btn btn-success btn-md float-right ml-3" type="submit">
+            Back
+          </button></a>
+        <a href="../template/AddStd.html">
+        <button class="btn btn-warning btn-md float-right ml-3" type="submit">
+          Add New Student
+        </button></a>
+        <button class="2 btn btn-danger btn-md float-right" type="submit">
+          Upload Excel file
+        </button>
+      </div> 
+    </div>
+    <div class="box1">
+    
+     <ul>Student ID</ul>
+     <ul>AND Student Name</ul>
+     <ul>AND Class</ul>
+     <ul>AND Section</ul>
+     <ul style="padding-bottom:30px;"></ul>
+    </div>
+    <form method="" action="">
+    <div class="box2">
+      <input type="text" id="course" name="course">
+      <input type="text" id="section" name="section">
+      <select>
+       <option>Select Course</option>
+       <option>Biology</option>
+       <option>Chemistry</option>
+       <option>Zoology</option>
+     </select>
+     <select>
+       <option>Select Section</option>
+       <option>ACE-A</option>
+       <option>ACE-B</option>
+       <option>ACE-C</option>
+    </select>
+     <input type="text" placeholder="Search.." name="search2" />
+       <button type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+       </button>
+    </div>
+    </form>
+  <div class="table-responsive">          
+  <table class="table table-striped">
+    <thead>
+      <tr class="bg-primary">
+        <th>#</th>
+        <th>Student Name</th>
+        <th>Student ID</th>
+        <th>Father Name</th>
+        <th>Mobile</th>
+        <th>Roll.No</th>
+        <th>Class</th>
+        <th>Section</th>
+        <th>Group</th>
+        <th>Options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Manoj</td>
+        <td>Manoj055</td>
+        <td>Kumar</td>
+        <td>1234567890</td>
+        <td>055</td>
+        <td>Biology</td>
+        <td>ACE-A</td>
+        <td>G-12</td>
+        <td>
+          <button type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fas fa-edit"></i></button>
+          <button class="btn"><i class="fas fa-trash-alt"></i></button>
+          <!--edit popup-->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Add Department
+                                          Information</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <label for="dcode"
+                                          ><b>Department Code* :</b></label
+                                        >
+                                        <input
+                                          type="text"
+                                          placeholder="Ex:CSE"
+                                          name="dcode"
+                                          required
+                                        /><br />
+                                        <label for="dname"
+                                          ><b>Department Name*:</b></label
+                                        >
+                                        <input
+                                          type="text"
+                                          placeholder="Ex:Computer Science & Eng"
+                                          name="dname"
+                                          required
+                                        />
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-arial="modal">Update</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </td>
+        
+      </tr>
+      
+       <tr>
+        <td>2</td>
+        <td>Aditya</td>
+        <td>Aditys012</td>
+        <td>Chandran</td>
+        <td>12345678</td>
+        <td>012</td>
+        <td>Biology</td>
+        <td>ACE-A</td>
+        <td>G-02</td>
+        <td> <button class="btn"><i class="fas fa-edit"></i></button>
+          <button class="btn"><i class="fas fa-trash-alt"></i></button>
+            </td>
+      </tr>
+       <tr>
+        <td>3</td>
+        <td>Gokul</td>
+        <td>Gokul034</td>
+        <td>Kumaran</td>
+        <td>12345678</td>
+        <td>034</td>
+        <td>Zoology</td>
+        <td>ACE-B</td>
+        <td>G-07</td>
+        <td> <button class="btn"><i class="fas fa-edit"></i></button>
+          <button class="btn"><i class="fas fa-trash-alt"></i></button>
+            </td>
+      </tr>
+       <tr>
+        <td>4</td>
+        <td>Rahul</td>
+        <td>Rahul087</td>
+        <td>Balamurugan</td>
+        <td>12345678</td>
+        <td>087</td>
+        <td>Chemistry</td>
+        <td>ACE-C</td>
+        <td>G-20</td>
+        <td> <button class="btn"><i class="fas fa-edit"></i></button>
+          <button class="btn"><i class="fas fa-trash-alt"></i></button>
+            </td>
+      </tr>
+       <tr>
+        <td>5</td>
+        <td>Vivek</td>
+        <td>Vivek099</td>
+        <td>Manoharan</td>
+        <td>12345678</td>
+        <td>099</td>
+        <td>Chemistry</td>
+        <td>ACE-B</td>
+        <td>G-21</td>
+        <td> <button class="btn" onclick="edit()"><i class="fas fa-edit"></i></button>
+          <button class="btn"><i class="fas fa-trash-alt"></i></button>
+            </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

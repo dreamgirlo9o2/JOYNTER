@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add College Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="../static/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-image: url(../static/images/infos.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+      }
+      input[type='text'],
+      input[type='password'] {
+        width: 60%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="card border-light mb-3 shadow p-3 mb-5 bg-white rounded"
+      style="max-width: 40rem; margin-top: 50px"
+    >
+      <div class="card-header bg-transparent">
+        <i class="fas fa-tags"></i>Add Department Information
+        <button
+          data-dismiss="alert"
+          data-target="#closeablecard"
+          type="button"
+          class="close"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="card-body">
+        <label for="dcode"><b>Department Code* :</b></label>
+        <input type="text" placeholder="Ex:CSE" name="dcode" required /><br />
+        <label for="dname"><b>Department Name*:</b></label>
+        <input
+          type="text"
+          placeholder="Ex:Computer Science & Eng"
+          name="dname"
+          required
+        />
+      </div>
+      <div class="card-footer bg-transparent">
+        <button class="btn btn-warning btn-md float-right ml-3" type="submit">
+          Close
+        </button>
+        <button class="btn btn-danger btn-md float-right" type="submit">
+          Add New
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
